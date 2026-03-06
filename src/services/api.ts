@@ -134,31 +134,31 @@ const db = {
         id: "education",
         title: "Education Verification",
         description: "Authentication of educational qualifications, degrees, and certificates directly from universities, colleges, and educational boards to prevent credential fraud.",
-        image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800&h=500"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpjZ-4GLhW3kqGHgbeihdCjhnjzedmx7Ewkw&s"
       },
       {
         id: "criminal",
         title: "Criminal Record Check",
         description: "Comprehensive screening through police records, court databases, and litigation searches to identify any past criminal history or pending cases.",
-        image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800&h=500"
+        image: "https://cdn.prod.website-files.com/63fef929dc32cb28d93d6c87/642422bfbaa60940acec0246_62fbe57d7e92a583766972c7_Everything%2520You%2520Need%2520to%2520Know%2520Criminal%2520Record%2520Checks.webp"
       },
       {
         id: "address",
         title: "Address Verification",
         description: "Physical site visits and digital verification to confirm the candidate's current and permanent residential addresses.",
-        image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800&h=500"
+        image: "https://img.freepik.com/free-vector/location_53876-25530.jpg?semt=ais_hybrid&w=740&q=80"
       },
       {
         id: "reference",
         title: "Reference Check",
         description: "Detailed interviews with professional references to gather insights on the candidate's work ethic, behavior, and professional capabilities.",
-        image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800&h=500"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EBoXajdUHy81baJQ1oO686X3xtTBND4RFA&s"
       },
       {
         id: "identity",
         title: "Identity Verification",
         description: "Validation of government-issued IDs such as PAN, Aadhaar, Passport, and Voter ID to ensure the candidate is who they claim to be.",
-        image: "https://images.unsplash.com/photo-1633265486064-086b219458ce?auto=format&fit=crop&q=80&w=800&h=500"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkhc2jD8TXHB2hsIhw2UUqm3MJ2G7bVQH9w&s"
       }
     ],
     packages: {
@@ -206,7 +206,7 @@ const db = {
       zip: "700091",
       country: "India"
     },
-    email: "contact@verifynex.com",
+    email: "contact@verifynex.info",
     phone: "+91 33 4567 8900",
     workingHours: "Monday - Friday: 9:00 AM - 6:00 PM"
   },

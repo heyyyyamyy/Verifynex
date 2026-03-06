@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import NotFound from './pages/NotFound';
+import GetStarted from './pages/GetStarted';
 import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="get-started" element={<GetStarted />} />
           <Route path="terms" element={<Terms />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="*" element={<NotFound />} />

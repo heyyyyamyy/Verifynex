@@ -77,7 +77,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-yellow-500 shrink-0" />
-                <span className="text-sm">contact@verifynex.com</span>
+                <span className="text-sm">contact@verifynex.info</span>
               </li>
             </ul>
           </div>

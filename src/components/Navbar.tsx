@@ -44,7 +44,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              to="/contact"
+              to="/get-started"
               className="bg-yellow-500 text-zinc-950 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-yellow-600 transition-colors shadow-sm"
             >
               Get Started
@@ -83,7 +83,7 @@ export default function Navbar() {
             ))}
             <div className="px-3 py-2">
               <Link
-                to="/contact"
+                to="/get-started"
                 className="block w-full text-center bg-yellow-500 text-zinc-950 px-4 py-2 rounded-md text-base font-medium hover:bg-yellow-600"
                 onClick={() => setIsOpen(false)}
               >
