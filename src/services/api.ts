@@ -9,7 +9,7 @@ const db = {
   home: {
     hero: {
       title: "Trust, Verified.",
-      subtitle: "Verifynex is India's leading Background Verification Group (BVG). We empower companies to make confident hiring decisions with comprehensive, accurate, and fast background checks.",
+      subtitle: "Verifynex is a leading Background Verification Group (BVG). We empower companies to make confident hiring decisions with comprehensive, accurate, and fast background checks.",
       cta: "Get Started Today",
       image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=1200&h=800"
     },
@@ -34,12 +34,12 @@ const db = {
         { title: "Unmatched Accuracy", desc: "Our multi-tier verification process ensures 99.9% accuracy in all reports." },
         { title: "Fast Turnaround", desc: "Get comprehensive reports in record time without compromising quality." },
         { title: "Data Security", desc: "Bank-grade encryption and strict compliance with data protection laws." },
-        { title: "Pan-India Reach", desc: "Extensive network covering urban and remote locations across India." }
+        { title: "Global Reach", desc: "Extensive network covering urban and remote locations globally." }
       ]
     },
     established: {
       title: "Our Legacy",
-      content: "Established in Kolkata, Verifynex has grown from a regional verification agency to a trusted national partner for Fortune 500 companies and growing startups alike. Our journey is defined by our unwavering commitment to truth and integrity."
+      content: "Established in New York, Verifynex has grown from a regional verification agency to a trusted national partner for Fortune 500 companies and growing startups alike. Our journey is defined by our unwavering commitment to truth and integrity."
     },
     process: {
       title: "How It Works",
@@ -74,8 +74,8 @@ const db = {
     testimonials: {
       title: "What Our Clients Say",
       reviews: [
-        { quote: "Verifynex has completely transformed our hiring process. Their reports are incredibly detailed and always delivered on time.", author: "HR Director, TechCorp India" },
-        { quote: "The level of accuracy and the pan-India reach they offer is unmatched. Highly recommended for any growing enterprise.", author: "Talent Acquisition Head, FinServe" },
+        { quote: "Verifynex has completely transformed our hiring process. Their reports are incredibly detailed and always delivered on time.", author: "HR Director, TechCorp" },
+        { quote: "The level of accuracy and the global reach they offer is unmatched. Highly recommended for any growing enterprise.", author: "Talent Acquisition Head, FinServe" },
         { quote: "Their API integration with our ATS was seamless. It saved us hundreds of hours of manual work.", author: "VP of Operations, GlobalRetail" }
       ]
     },
@@ -88,10 +88,10 @@ const db = {
   about: {
     title: "About Verifynex",
     subtitle: "Building a Foundation of Trust",
-    content: "Verifynex is a specialized Background Verification Group (BVG) headquartered in Kolkata. We understand that a company's greatest asset is its people, and ensuring the integrity of your workforce is paramount. Our mission is to mitigate hiring risks by providing transparent, accurate, and timely background screening services.",
+    content: "Verifynex is a specialized Background Verification Group (BVG) headquartered in New York. We understand that a company's greatest asset is its people, and ensuring the integrity of your workforce is paramount. Our mission is to mitigate hiring risks by providing transparent, accurate, and timely background screening services.",
     mission: "To be the most trusted partner in background verification, enabling organizations to build secure and reliable teams.",
     vision: "A corporate world where every hire is made with absolute confidence and trust.",
-    established: "Since our inception, we have conducted over 1 million verifications, serving clients across IT, BFSI, Healthcare, and Manufacturing sectors. Our deep roots in Kolkata provide us with a strong operational base, while our technological capabilities allow us to serve clients globally.",
+    established: "Since our inception, we have conducted over 1 million verifications, serving clients across IT, BFSI, Healthcare, and Manufacturing sectors. Our deep roots in New York provide us with a strong operational base, while our technological capabilities allow us to serve clients globally.",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200&h=600",
     values: {
       title: "Our Core Values",
@@ -108,8 +108,8 @@ const db = {
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800&h=500"
     },
     network: {
-      title: "Pan-India & Global Network",
-      content: "While our roots are in Kolkata, our reach is global. We have established a vast network of field agents, legal experts, and institutional contacts across every state in India. For international hires, we partner with trusted global agencies to ensure seamless cross-border verifications."
+      title: "Global Network",
+      content: "While our roots are in New York, our reach is global. We have established a vast network of field agents, legal experts, and institutional contacts across every state. For international hires, we partner with trusted global agencies to ensure seamless cross-border verifications."
     },
     compliance: {
       title: "Compliance & Legal Adherence",
@@ -200,14 +200,17 @@ const db = {
     title: "Contact Us",
     subtitle: "Get in touch with our verification experts.",
     address: {
-      street: "Verifynex Tower, Sector V, Salt Lake",
-      city: "Kolkata",
-      state: "West Bengal",
-      zip: "700091",
-      country: "India"
+      street: "120 Broadway, Suite 1500",
+      city: "New York",
+      state: "NY",
+      zip: "10271",
+      country: "USA"
     },
-    email: "contact@verifynex.info",
-    phone: "+91 33 4567 8900",
+    emails: [
+      "verification.team@verifynex.info",
+      "bgvdesk@verifynex.info"
+    ],
+    phone: "+1 (212) 555-0198",
     workingHours: "Monday - Friday: 9:00 AM - 6:00 PM"
   },
   terms: {
@@ -233,7 +236,7 @@ const db = {
       Verifynex shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with the use of our services.
 
       7. Governing Law
-      These terms shall be governed by and construed in accordance with the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts in Kolkata, West Bengal.
+      These terms shall be governed by and construed in accordance with the laws of the United States. Any disputes shall be subject to the exclusive jurisdiction of the courts in New York.
     `
   },
   privacy: {
@@ -262,7 +265,7 @@ const db = {
       Candidates have the right to request access to, correction of, or deletion of their personal data held by us, subject to legal and contractual restrictions.
 
       8. Contact Us
-      For any privacy-related concerns, please contact our Data Protection Officer at privacy@verifynex.com or write to us at our Kolkata office.
+      For any privacy-related concerns, please contact our Data Protection Officer at privacy@verifynex.info or write to us at our New York office.
     `
   }
 };

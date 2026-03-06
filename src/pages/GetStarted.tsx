@@ -31,9 +31,9 @@ export default function GetStarted() {
     setIsSubmitting(true);
 
     // Web3Forms Integration
-    // To receive emails at contact@verifynex.info:
+    // To receive emails at verification.team@verifynex.info:
     // 1. Go to https://web3forms.com/
-    // 2. Enter contact@verifynex.info to get your Access Key
+    // 2. Enter verification.team@verifynex.info to get your Access Key
     // 3. Replace 'YOUR_ACCESS_KEY_HERE' with your actual key
     const formPayload = new FormData();
     formPayload.append("access_key", "8302a3ef-5396-4d39-abdc-b2c74d2b1b66"); // Replace with your Web3Forms Access Key

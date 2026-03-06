@@ -111,7 +111,7 @@ export default function Home() {
             >
               <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-600 text-sm font-semibold mb-6">
                 <ShieldCheck className="w-4 h-4" />
-                India's Trusted BVG
+                Trusted Global BVG
               </span>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight mb-6">
                 {data.hero.title}
@@ -346,7 +346,7 @@ export default function Home() {
               </p>
               <div className="mt-auto">
                 <p className="text-sm text-zinc-500 uppercase tracking-wider font-semibold">Headquartered in</p>
-                <p className="text-xl font-medium text-white mt-1">Kolkata, West Bengal</p>
+                <p className="text-xl font-medium text-white mt-1">New York, NY</p>
               </div>
             </motion.div>
 

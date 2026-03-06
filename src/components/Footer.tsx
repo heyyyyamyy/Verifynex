@@ -16,22 +16,8 @@ export default function Footer() {
               <span className="font-bold text-xl text-white tracking-tight">Verifynex</span>
             </Link>
             <p className="text-sm text-zinc-400 mb-6">
-              India's leading Background Verification Group (BVG). Empowering companies with trust and transparency.
+              Leading Background Verification Group (BVG). Empowering companies with trust and transparency.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-zinc-400 hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-zinc-400 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-zinc-400 hover:text-white transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-zinc-400 hover:text-white transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -69,15 +55,18 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-yellow-500 shrink-0 mt-0.5" />
-                <span className="text-sm">Verifynex Tower, Sector V, Salt Lake, Kolkata, West Bengal 700091, India</span>
+                <span className="text-sm">120 Broadway, Suite 1500, New York, NY 10271, USA</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-yellow-500 shrink-0" />
-                <span className="text-sm">+91 33 4567 8900</span>
+                <span className="text-sm">+1 (212) 555-0198</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-yellow-500 shrink-0" />
-                <span className="text-sm">contact@verifynex.info</span>
+              <li className="flex items-start gap-3">
+                <Mail className="h-5 w-5 text-yellow-500 shrink-0 mt-0.5" />
+                <div className="flex flex-col gap-1">
+                  <a href="mailto:verification.team@verifynex.info" className="text-sm hover:text-yellow-400 transition-colors">verification.team@verifynex.info</a>
+                  <a href="mailto:bgvdesk@verifynex.info" className="text-sm hover:text-yellow-400 transition-colors">bgvdesk@verifynex.info</a>
+                </div>
               </li>
             </ul>
           </div>

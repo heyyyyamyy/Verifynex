@@ -25,9 +25,9 @@ export default function Contact() {
     const formData = new FormData(formElement);
     
     // Web3Forms Integration
-    // To receive emails at contact@verifynex.info:
+    // To receive emails at verification.team@verifynex.info:
     // 1. Go to https://web3forms.com/
-    // 2. Enter contact@verifynex.info to get your Access Key
+    // 2. Enter verification.team@verifynex.info to get your Access Key
     // 3. Replace 'YOUR_ACCESS_KEY_HERE' with your actual key
     formData.append("access_key", "8302a3ef-5396-4d39-abdc-b2c74d2b1b66"); // Replace with your Web3Forms Access Key
     formData.append("subject", "New Contact Message from VerifyNex Website");
@@ -120,7 +120,13 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-1">Email</h3>
-                  <p className="text-zinc-400">{data.email}</p>
+                  <div className="flex flex-col gap-1">
+                    {data.emails.map((email: string, index: number) => (
+                      <a key={index} href={`mailto:${email}`} className="text-zinc-400 hover:text-yellow-500 transition-colors">
+                        {email}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
 
