@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { fetchPageContent } from '../services/api';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Briefcase, GraduationCap, ShieldAlert, MapPin, CheckCircle2, ArrowRight, Monitor, Landmark, HeartPulse, Factory, ShoppingBag, BookOpen, Star } from 'lucide-react';
+import { ShieldCheck, Briefcase, GraduationCap, ShieldAlert, MapPin, CheckCircle2, ArrowRight, Monitor, Landmark, HeartPulse, Factory, ShoppingBag, BookOpen, Star, HardHat, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const iconMap: Record<string, any> = {
   Briefcase,
@@ -14,7 +14,8 @@ const iconMap: Record<string, any> = {
   HeartPulse,
   Factory,
   ShoppingBag,
-  BookOpen
+  BookOpen,
+  HardHat
 };
 
 const LoadingSequence = () => {
@@ -64,6 +65,85 @@ const LoadingSequence = () => {
             />
           </motion.div>
         </AnimatePresence>
+      </div>
+    </div>
+  );
+};
+
+const TestimonialsSlider = ({ reviews }: { reviews: any[] }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerView, setItemsPerView] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setItemsPerView(1);
+      } else if (window.innerWidth < 1024) {
+        setItemsPerView(2);
+      } else {
+        setItemsPerView(3);
+      }
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const maxIndex = Math.max(0, reviews.length - itemsPerView);
+
+  const next = () => setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
+  const prev = () => setCurrentIndex((prev) => Math.max(prev - 1, 0));
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => {
+        if (prev >= maxIndex) return 0;
+        return prev + 1;
+      });
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [maxIndex]);
+
+  return (
+    <div className="relative overflow-hidden px-4 sm:px-0">
+      <div 
+        className="flex transition-transform duration-500 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)` }}
+      >
+        {reviews.map((review: any, index: number) => (
+          <div 
+            key={index} 
+            className="w-full shrink-0 px-2 sm:px-4"
+            style={{ width: `${100 / itemsPerView}%` }}
+          >
+            <div className="bg-zinc-950 rounded-2xl p-8 shadow-sm border border-zinc-800 h-full flex flex-col">
+              <div className="flex gap-1 mb-6 text-amber-400">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
+              </div>
+              <p className="text-zinc-400 italic mb-6 flex-1">"{review.quote}"</p>
+              <p className="font-semibold text-white">- {review.author}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      
+      <div className="flex justify-center mt-10 gap-4">
+        <button 
+          onClick={prev}
+          disabled={currentIndex === 0}
+          className="p-3 rounded-full bg-zinc-800 text-white disabled:opacity-30 hover:bg-zinc-700 transition-colors"
+          aria-label="Previous testimonial"
+        >
+          <ChevronLeft className="w-6 h-6" />
+        </button>
+        <button 
+          onClick={next}
+          disabled={currentIndex === maxIndex}
+          className="p-3 rounded-full bg-zinc-800 text-white disabled:opacity-30 hover:bg-zinc-700 transition-colors"
+          aria-label="Next testimonial"
+        >
+          <ChevronRight className="w-6 h-6" />
+        </button>
       </div>
     </div>
   );
@@ -361,24 +441,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{data.testimonials.title}</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {data.testimonials.reviews.map((review: any, index: number) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-zinc-950 rounded-2xl p-8 shadow-sm border border-zinc-800"
-              >
-                <div className="flex gap-1 mb-6 text-amber-400">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
-                </div>
-                <p className="text-zinc-400 italic mb-6">"{review.quote}"</p>
-                <p className="font-semibold text-white">- {review.author}</p>
-              </motion.div>
-            ))}
-          </div>
+          <TestimonialsSlider reviews={data.testimonials.reviews} />
         </div>
       </section>
 

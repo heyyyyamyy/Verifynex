@@ -60,7 +60,8 @@ const db = {
         { name: "Healthcare", icon: "HeartPulse" },
         { name: "Manufacturing", icon: "Factory" },
         { name: "Retail & E-commerce", icon: "ShoppingBag" },
-        { name: "Education", icon: "BookOpen" }
+        { name: "Education", icon: "BookOpen" },
+        { name: "Construction", icon: "HardHat" }
       ]
     },
     stats: {
@@ -74,9 +75,36 @@ const db = {
     testimonials: {
       title: "What Our Clients Say",
       reviews: [
-        { quote: "Verifynex has completely transformed our hiring process. Their reports are incredibly detailed and always delivered on time.", author: "HR Director, TechCorp" },
-        { quote: "The level of accuracy and the global reach they offer is unmatched. Highly recommended for any growing enterprise.", author: "Talent Acquisition Head, FinServe" },
-        { quote: "Their API integration with our ATS was seamless. It saved us hundreds of hours of manual work.", author: "VP of Operations, GlobalRetail" }
+        { quote: "Verifynex has completely transformed our hiring process. Their reports are incredibly detailed and always delivered on time.", author: "HR Director, NexaTech Solutions" },
+        { quote: "The level of accuracy and the global reach they offer is unmatched. Highly recommended for any growing enterprise.", author: "Talent Acquisition Head, FinServe Global" },
+        { quote: "Their API integration with our ATS was seamless. It saved us hundreds of hours of manual work.", author: "VP of Operations, RetailEdge Partners" },
+        { quote: "We rely on Verifynex for all our cross-border hires. Their international background checks are thorough and compliant.", author: "Global HR Manager, Altus Finance" },
+        { quote: "Exceptional service and quick turnaround times. They helped us scale our workforce securely.", author: "Director of People, CloudSync IT" },
+        { quote: "The best background verification partner we've worked with. Their customer support is highly responsive.", author: "Operations Lead, Apex HR Consultancy" },
+        { quote: "Verifynex's attention to detail in education verification has saved us from several bad hires.", author: "Recruitment Manager, EduTech Innovations" },
+        { quote: "Their criminal record checks are exhaustive. We feel much safer with our new onboarding process.", author: "Security Officer, Prime Logistics" },
+        { quote: "A truly global BVG. They handled our complex multi-country verification requests with ease.", author: "Head of Talent, Vertex Manufacturing" },
+        { quote: "The dashboard is intuitive and makes tracking verification statuses incredibly easy.", author: "HR Business Partner, Quantum Health" },
+        { quote: "Reliable, fast, and accurate. Verifynex is an integral part of our recruitment strategy.", author: "Chief People Officer, Stellar Dynamics" },
+        { quote: "We appreciate their strict adherence to data privacy laws across different regions.", author: "Compliance Director, FinTrust Advisors" },
+        { quote: "Their address verification process is robust and highly dependable.", author: "Onboarding Specialist, Urban Build Construction" },
+        { quote: "Verifynex provides a level of transparency that is rare in this industry.", author: "VP of HR, Nexus Retail Group" },
+        { quote: "The red-amber-green reporting system makes decision-making so much faster.", author: "Talent Acquisition Specialist, CyberNet Security" },
+        { quote: "They consistently deliver high-quality reports within the promised SLAs.", author: "HR Manager, Horizon Energy" },
+        { quote: "We've seen a significant drop in early attrition since partnering with Verifynex.", author: "Director of Operations, OmniStaffing" },
+        { quote: "Their team is knowledgeable and always ready to assist with complex verification cases.", author: "Recruitment Coordinator, Global Trade Partners" },
+        { quote: "Verifynex's technology platform is lightyears ahead of their competitors.", author: "CTO, InnovateTech" },
+        { quote: "We value their commitment to ethical verification practices.", author: "Head of HR, EcoSolutions Inc." },
+        { quote: "A seamless experience from start to finish. Highly professional team.", author: "HR Director, Apex Financial Services" },
+        { quote: "Their reference checks provide deep insights that go beyond the resume.", author: "Talent Manager, Creative Minds Agency" },
+        { quote: "Verifynex is our trusted partner for executive-level background screening.", author: "VP of Talent, Summit Leadership" },
+        { quote: "They handle high-volume requests efficiently without compromising quality.", author: "Operations Manager, Swift Delivery Co." },
+        { quote: "The integration with Workday was flawless. It has streamlined our entire workflow.", author: "HRIS Manager, Enterprise Solutions" },
+        { quote: "We are impressed by their global network and local expertise in various countries.", author: "Global Mobility Manager, TechFrontiers" },
+        { quote: "Verifynex provides peace of mind. We know our hires are thoroughly vetted.", author: "CEO, SecureNet Systems" },
+        { quote: "Their reports are clear, concise, and actionable. Exactly what we need.", author: "HR Generalist, BlueWave Marine" },
+        { quote: "A reliable partner that understands the unique needs of the healthcare sector.", author: "Director of Nursing, CarePlus Hospitals" },
+        { quote: "We highly recommend Verifynex for their professionalism and accuracy.", author: "Managing Partner, LegalEdge Associates" }
       ]
     },
     cta: {
